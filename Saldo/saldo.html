@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../Saldo/saldo.css">
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Inicio Appi Bank</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="/Imagenes/logo.jpg" alt="">
+            </div>
+
+            <span class="logo_name">AppiBank</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Inicio</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-files-landscapes"></i>
+                        <span class="link-name">Mas Servicios</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-chart"></i>
+                        <span class="link-name">Análisis</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-comments"></i>
+                        <span class="link-name">Notas</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-share"></i>
+                        <span class="link-name">Compartir</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="#">
+                        <i class="uil uil-sign-out-alt"></i>
+                        <span class="link-name" id="logoutButton" onclick="logout()">Cerrar Sesion</span>
+                        <dialog id="dialog">
+                            <!-- Contenido del diálogo -->
+                        </dialog>
+                    </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-brightness-half"></i>
+                        <span class="link-name">Modo Oscuro</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-university"></i>
+                    <span class="text">Bienvenido al menú de tu Appi</span>
+                </div>
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-moneybag"></i>
+                        <span class="text">Ingresa un valor
+                        </span>
+                        <input type="number" id="dinero" />
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-dollar-alt"></i>
+                        <span class="text">Tu saldo</span>
+                        <input type="number" id="saldo" readonly class="valorsaldo" />
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-plus"></i>
+                        <span class="text">¿Deseas depositar este valor?</span>
+                        <button class="button" oneclick="(depositar)" >Depositar</button>
+                    </div>
+                    <div class="box box4">
+                        <i class="uil uil-bill"></i>
+                        <span class="text">¿Deseas retirar este valor?</span>
+                        <button class="button2">Retirar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Tus actividades recientes</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Nombre</span>
+
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">¿Cuánto?</span>
+
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Fecha</span>
+
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Tipo</span>
+
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Referencia</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/saldo.js"></script>
+</body>
+
+</html>
