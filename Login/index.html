@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Login/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Inicio</title>
 </head>
 
@@ -35,8 +35,10 @@
                         <input type="password" id="password" placeholder="Contraseña">
                     </div>
                     <div class="inputbox">
-                        <input class="primary" onclick="authenticate();"
-                            onclick="document.getElementById('dialog').showModal();" type="submit" value="Ingresar">
+                        <button onclick="authenticate();"
+                            onclick="document.getElementById('dialog').showModal();">Iniciar sesión</button>
+                        <!-- <input class="primary" onclick="authenticate();"
+                            onclick="document.getElementById('dialog').showModal();" type="submit" value="Ingresar"> -->
                     </div>
                     <p class="forget">¿Olvidaste la contraseña? <a href="#">Click aquí</a></p>
                     <p class="forget">¿No cuentas con una cuenta? <a href="/Registro/Registro.html">Registrate</a>
@@ -44,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <script src="/js/login.js"></script>
+        <script src="../js/login.js"></script>
 
     </section>
     <dialog id="dialog">
@@ -56,4 +58,5 @@
         <span class="loading">Cargando...</span>
     </dialog>
 </body>
+
 </html>

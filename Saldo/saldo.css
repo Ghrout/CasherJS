@@ -337,6 +337,7 @@ nav.close~.dashboard .top {
     font-weight: 500;
     color: var(--text-color);
     margin-left: 10px;
+
 }
 
 .dash-content .boxes {
@@ -367,6 +368,7 @@ nav.close~.dashboard .top {
     font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
+    text-align: center;
 }
 
 .boxes .box .number {
@@ -537,6 +539,31 @@ nav.close~.dashboard .top {
 
 }
 
+
+.valorsaldo {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+    border: 1px solid #000000; 
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    font-size: 16px; 
+    color: #333; 
+    outline: none; 
+    letter-spacing: 1px;
+}
+
+.dark .valorsaldo{
+    background-color: #838383;
+    color: rgb(0, 0, 0); 
+    border: 1px solid #3A3B3C; 
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    font-size: 16px; 
+    color: #333; 
+    outline: none;  
+    letter-spacing: 1px;
+}
+
 input[type="number"] {
     background-color: #ffffff;
     color: rgb(0, 0, 0); 
@@ -548,6 +575,7 @@ input[type="number"] {
     outline: none; 
 }
 
+
 .dark input[type="number"] {
     background-color: #838383;
     color: rgb(0, 0, 0); 
@@ -557,29 +585,6 @@ input[type="number"] {
     font-size: 16px; 
     color: #333; 
     outline: none; 
-}
-
-input.valorsaldo[type="number"] {
-    background-color: #ffe6ac76;
-    border: 1px solid #ffe6ac76;
-    border-radius: 5px;
-    padding: 8px 12px;
-    font-size: 16px;
-    color: #333;
-    outline: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
-}
-
-/* Estilo para el modo oscuro */
-.dark input.valorsaldo[type="number"] {
-    background-color: #3A3B3C;
-    color: #000; 
-    border: 1px solid #3A3B3C; 
-    border-radius: 5px; 
-    padding: 8px 12px;
-    font-size: 16px;
-    outline: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 /* Estilos base del botón */

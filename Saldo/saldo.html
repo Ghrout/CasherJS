@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="../Saldo/saldo.css">
+    <link rel="stylesheet" href="saldo.css">
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Inicio Appi Bank</title>
@@ -78,7 +78,7 @@
                 <input type="text" placeholder="Search here...">
             </div>
 
-            <img src="images/profile.jpg" alt="">
+            <img src="../Imagenes/logo.jpg" alt="">
         </div>
 
         <div class="dash-content">
@@ -95,49 +95,19 @@
                         <input type="number" id="dinero" />
                     </div>
                     <div class="box box2">
-                        <i class="uil uil-dollar-alt"></i>
+                        <i class="uil uil-dollar-alt"></i> 
                         <span class="text">Tu saldo</span>
-                        <input type="number" id="saldo" readonly class="valorsaldo" />
+                        <span class="valorsaldo text" id="balance">0</span>
                     </div>
                     <div class="box box3">
                         <i class="uil uil-plus"></i>
                         <span class="text">¿Deseas depositar este valor?</span>
-                        <button class="button" oneclick="(depositar)" >Depositar</button>
+                        <button type="button" onclick="depositar()" class="button">Depositar</button>
                     </div>
                     <div class="box box4">
                         <i class="uil uil-bill"></i>
                         <span class="text">¿Deseas retirar este valor?</span>
-                        <button class="button2">Retirar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Tus actividades recientes</span>
-                </div>
-
-                <div class="activity-data">
-                    <div class="data names">
-                        <span class="data-title">Nombre</span>
-
-                    </div>
-                    <div class="data email">
-                        <span class="data-title">¿Cuánto?</span>
-
-                    </div>
-                    <div class="data joined">
-                        <span class="data-title">Fecha</span>
-
-                    </div>
-                    <div class="data type">
-                        <span class="data-title">Tipo</span>
-
-                    </div>
-                    <div class="data status">
-                        <span class="data-title">Referencia</span>
-
+                        <button type="button" onclick="retirar()" class="button2">Retirar</button>
                     </div>
                 </div>
             </div>
@@ -145,8 +115,8 @@
     </section>
 
     <script src="../js/darkmode.js"></script>
-    <script src="../js/login.js"></script>
     <script src="../js/saldo.js"></script>
+    <!-- <script src="../js/login.js"></script> -->
 </body>
 
 </html>
